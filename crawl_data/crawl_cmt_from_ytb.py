@@ -78,3 +78,11 @@ class Crawler:
                 else:
                     return match.group()
         raise ValueError(f"❌ Không tìm thấy video ID trong URL: {url}")
+
+# c = Crawler(url='https://youtu.be/APwGEtl7lcg?si=YAxQoopTJS5ugnX3')
+# c.get_youtube_comments()
+# # print(c.comments)
+# content = [c['text'] for c in c.comments if isinstance(c, dict) and 'text' in c]
+# authors = [c['author'] for c in c.comments if isinstance(c, dict) and 'author' in c]
+# for x, y in zip(authors, content):
+#     print(x + ": " + y)
